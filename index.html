@@ -26,9 +26,11 @@
     </script>
     <script>
         function openAngelWithReferral() {
-            // Referral code clipboard me copy karne ka script
-            navigator.clipboard.writeText("HONNZY");
-            alert("✅ Referral code 'HONNZY' copied! Paste it if asked during Angel One registration.");
+            // Auto copy referral code HONNZY to clipboard
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText("HONNZY");
+            }
+            alert("✅ Referral Code 'HONNZY' copied! Paste it during Angel One Demat Registration if prompted.");
             window.open("https://rebrand.ly/angelone-open", "_blank");
         }
     </script>
@@ -37,54 +39,102 @@
 
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-2">
-                <span class="text-xl font-extrabold text-accentGold">TradeVortex</span>
-                <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">School of Trading</span>
-            </div>
-            <div>
-                <button onclick="openAngelWithReferral()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-4 py-2 rounded-lg transition-all shadow-md">
-                    🚀 Open Demat Account
-                </button>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <span class="text-2xl font-black tracking-tight text-white">Trade<span class="text-accentGold">Vortex</span></span>
+                    <span class="hidden sm:inline-block text-xs font-semibold bg-slate-800 text-slate-300 px-2.5 py-1 rounded-full border border-slate-700">Academy</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button onclick="openAngelWithReferral()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm px-4 py-2 rounded-lg transition-all shadow-lg shadow-emerald-900/30">
+                        🚀 Open Demat Account
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-4 py-16 md:py-24 text-center">
-        <span class="bg-accentGold/10 text-accentGold border border-accentGold/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Institutional SMC Mentorship</span>
-        <h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">Master Smart Money Concepts & <span class="text-accentCyan">Algorithmic Trading</span></h1>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto mt-4">Learn institutional order flow, fair value gaps, and liquidity sweeps with professional mentorship by Mr. Yusuf.</p>
-        
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-            <button onclick="openAngelWithReferral()" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all text-base">
-                🔓 Open Free Demat & Get FREE AI Tools
-            </button>
+    <section class="relative overflow-hidden py-16 sm:py-24 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block bg-accentGold/10 text-accentGold border border-accentGold/30 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider mb-6">
+                Institutional Mentorship & Quantitative Analytics
+            </span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+                Trade Like Financial Institutions With <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentGold to-amber-200">Smart Money Concepts</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Master Order Flow, Fair Value Gaps, Liquidity Sweeps, and Order Blocks with professional mentorship by Mr. Yusuf.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                <button onclick="openAngelWithReferral()" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all text-base">
+                    🔓 Open Free Demat & Get FREE AI Tools
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- Special Angel One AI Tools Unlock Section -->
-    <section class="max-w-7xl mx-auto px-4 my-12">
-        <div class="bg-gradient-to-r from-cardBg to-slate-900 border-2 border-purple-500 rounded-2xl p-6 md:p-10 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
-            <div class="space-y-3">
-                <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Exclusive Partnership Offer</span>
-                <h3 class="text-2xl md:text-3xl font-extrabold text-white">Open Angel One Account & Unlock <span class="text-accentGold">FREE AI Trading Tools</span></h3>
-                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
-                    Get instant access to our advanced SMC Scanner, automated alerts, and live quantitative dashboards completely free when you open your Demat account using code <strong class="text-accentCyan">HONNZY</strong>.
-                </p>
+    <!-- ⚡ SPECIAL ANGEL ONE DEMAT + AI TOOLS BANNER -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-12">
+        <div class="bg-gradient-to-br from-cardBg via-slate-900 to-purple-950/40 border-2 border-purple-500/80 rounded-2xl p-6 sm:p-10 text-white shadow-2xl relative overflow-hidden">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
+                <div class="space-y-3 text-center lg:text-left">
+                    <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Exclusive Client Benefit
+                    </span>
+                    <h3 class="text-2xl sm:text-4xl font-extrabold text-white">
+                        Open Free Angel One Demat Account & Get <span class="text-accentGold">FREE AI Tools Access</span>
+                    </h3>
+                    <p class="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+                        Open your Angel One Demat account using referral code <strong class="text-accentCyan font-mono">HONNZY</strong> to unlock our full Institutional SMC Analytics Terminal, automated scanners, and live dashboards for free.
+                    </p>
+                </div>
+                <div class="shrink-0 text-center w-full lg:w-auto">
+                    <button onclick="openAngelWithReferral()" class="w-full lg:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-xl transition-all duration-300 text-base transform hover:-translate-y-0.5">
+                        🚀 Open Demat & Unlock AI Tools
+                    </button>
+                    <p class="text-xs text-slate-400 mt-3">
+                        Auto-applies Referral Code: <span class="text-accentGold font-bold font-mono">HONNZY</span>
+                    </p>
+                </div>
             </div>
-            <div class="text-center shrink-0 w-full md:w-auto">
-                <button onclick="openAngelWithReferral()" class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 text-base">
-                    🚀 Claim Free AI Tools Now
-                </button>
-                <p class="text-xs text-slate-400 mt-3">Auto-copies code: <span class="text-accentGold font-bold">HONNZY</span></p>
+        </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="py-16 bg-slate-900/40 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Institutional SMC Curriculum</h2>
+                <p class="text-slate-400 text-sm mt-2">Designed for Index Options Traders & Equity Scalpers</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-cardBg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center text-accentGold text-2xl font-bold mb-4">01</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Market Structure & Liquidity</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Understand Break of Structure (BOS), Change of Character (CHoCH), and Liquidity Sweeps before placing orders.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-cardBg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-lg flex items-center justify-center text-accentCyan text-2xl font-bold mb-4">02</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Fair Value Gaps & Order Blocks</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Pinpoint institutional imbalances (FVG) and high-probability order blocks for precision entry & stop-loss.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-cardBg border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center text-emerald-400 text-2xl font-bold mb-4">03</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Quantitative AI Terminal</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Use our real-time Streamlit SMC scanner with automated position sizing and strike mapping engines.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500 max-w-7xl mx-auto px-4">
-        <p>© 2026 TradeVortex School of Trading. All rights reserved. Educational content for technical analysis practice only.</p>
+    <footer class="py-10 border-t border-slate-800 text-center text-xs text-slate-500 max-w-7xl mx-auto px-4">
+        <p class="mb-2">© 2026 TradeVortex School of Trading. Mentor: Mr. Yusuf.</p>
+        <p class="max-w-3xl mx-auto leading-relaxed">Disclaimer: All education, tools, and technical analysis setups provided are strictly for quantitative research, backtesting, and learning purposes. Stock market and F&O trading involve financial risk.</p>
     </footer>
 
 </body>

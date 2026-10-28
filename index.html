@@ -24,231 +24,68 @@
             }
         }
     </script>
+    <script>
+        function openAngelWithReferral() {
+            // Referral code clipboard me copy karne ka script
+            navigator.clipboard.writeText("HONNZY");
+            alert("✅ Referral code 'HONNZY' copied! Paste it if asked during Angel One registration.");
+            window.open("https://rebrand.ly/angelone-open", "_blank");
+        }
+    </script>
 </head>
 <body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentGold selection:text-black">
-    
+
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-accentGold to-accentCyan flex items-center justify-center font-extrabold text-black text-xl shadow-lg shadow-accentGold/20">
-                    TV
-                </div>
-                <div>
-                    <span class="text-xl font-extrabold tracking-wider bg-gradient-to-r from-white via-slate-200 to-accentGold bg-clip-text text-transparent">TRADEVORTEX</span>
-                    <span class="block text-[10px] tracking-widest text-accentCyan font-semibold uppercase">School of Trading</span>
-                </div>
-            </div>
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#curriculum" class="hover:text-accentGold transition">Curriculum</a>
-                <a href="#broker" class="hover:text-accentGold transition">Angel One Partner</a>
-                <a href="#simulator" class="hover:text-accentGold transition">Simulator</a>
-                <a href="#pricing" class="hover:text-accentGold transition">Masterclass</a>
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-extrabold text-accentGold">TradeVortex</span>
+                <span class="text-xs bg-slate-800 text-slate-300 px-2 py-0.5 rounded">School of Trading</span>
             </div>
             <div>
-                <a href="#pricing" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-bold text-sm bg-gradient-to-r from-accentGold to-amber-500 text-black shadow-lg shadow-accentGold/20 hover:scale-[1.02] active:scale-[0.98] transition">
-                    Join Masterclass
-                </a>
+                <button onclick="openAngelWithReferral()" class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-4 py-2 rounded-lg transition-all shadow-md">
+                    🚀 Open Demat Account
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-20 pb-24 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-darkBg to-darkBg pointer-events-none"></div>
-        <div class="max-w-5xl mx-auto px-4 text-center relative z-10">
-            <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-accentGold/10 border border-accentGold/30 text-accentGold text-xs font-semibold mb-8">
-                <span class="w-2 h-2 rounded-full bg-accentGold animate-pulse"></span>
-                <span>NEXT LIVE INSTITUTIONAL BATCH OPEN</span>
-            </div>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
-                Stop Trading Like Retail.<br>
-                <span class="bg-gradient-to-r from-accentGold via-amber-300 to-yellow-500 bg-clip-text text-transparent">Master Institutional Smart Money.</span>
-            </h1>
-            <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Decode Liquidity Sweeps, Order Blocks, and Change of Character (CHoCH). Learn how financial institutions move market prices with precision risk management.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#pricing" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-gradient-to-r from-accentGold to-amber-500 text-black shadow-xl shadow-accentGold/20 hover:scale-105 transition">
-                    Explore Masterclass &rarr;
-                </a>
-                <a href="#broker" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-cardBg border border-slate-700 hover:border-accentCyan text-slate-200 transition flex items-center justify-center space-x-2">
-                    <span>Open Free Demat Account</span>
-                    <span class="text-accentCyan">&#9889;</span>
-                </a>
-            </div>
+    <section class="max-w-7xl mx-auto px-4 py-16 md:py-24 text-center">
+        <span class="bg-accentGold/10 text-accentGold border border-accentGold/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Institutional SMC Mentorship</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold mt-6 leading-tight">Master Smart Money Concepts & <span class="text-accentCyan">Algorithmic Trading</span></h1>
+        <p class="text-slate-400 text-lg max-w-2xl mx-auto mt-4">Learn institutional order flow, fair value gaps, and liquidity sweeps with professional mentorship by Mr. Yusuf.</p>
+        
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <button onclick="openAngelWithReferral()" class="bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-bold px-8 py-4 rounded-xl shadow-xl hover:scale-105 transition-all text-base">
+                🔓 Open Free Demat & Get FREE AI Tools
+            </button>
         </div>
     </section>
 
-    <!-- Stats Bar -->
-    <section class="border-y border-slate-800 bg-cardBg/50 py-8">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-                <div class="text-3xl font-extrabold text-accentGold">12,500+</div>
-                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Students Trained</div>
+    <!-- Special Angel One AI Tools Unlock Section -->
+    <section class="max-w-7xl mx-auto px-4 my-12">
+        <div class="bg-gradient-to-r from-cardBg to-slate-900 border-2 border-purple-500 rounded-2xl p-6 md:p-10 text-white shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="space-y-3">
+                <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Exclusive Partnership Offer</span>
+                <h3 class="text-2xl md:text-3xl font-extrabold text-white">Open Angel One Account & Unlock <span class="text-accentGold">FREE AI Trading Tools</span></h3>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    Get instant access to our advanced SMC Scanner, automated alerts, and live quantitative dashboards completely free when you open your Demat account using code <strong class="text-accentCyan">HONNZY</strong>.
+                </p>
             </div>
-            <div>
-                <div class="text-3xl font-extrabold text-accentCyan">1:3.5+</div>
-                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Avg Risk-to-Reward</div>
-            </div>
-            <div>
-                <div class="text-3xl font-extrabold text-accentGold">99.4%</div>
-                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Satisfaction Rate</div>
-            </div>
-            <div>
-                <div class="text-3xl font-extrabold text-accentCyan">24/7</div>
-                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Mentorship Support</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SMC Curriculum Section -->
-    <section id="curriculum" class="py-20 max-w-7xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-xs font-bold tracking-widest text-accentCyan uppercase mb-3">Institutional Syllabus</h2>
-            <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">Advanced Smart Money Concepts (SMC)</h3>
-            <p class="text-slate-400">Designed to give you exact institutional entry models across Nifty, BankNifty, and MCX commodities.</p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-cardBg border border-slate-800 p-8 rounded-2xl hover:border-accentGold/50 transition group">
-                <div class="w-12 h-12 rounded-xl bg-accentGold/10 text-accentGold flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition">01</div>
-                <h4 class="text-xl font-bold mb-3">Order Blocks & FVG</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Identify institutional footprints, mitigation blocks, and Fair Value Gaps where big banks place massive orders.</p>
-            </div>
-            <div class="bg-cardBg border border-slate-800 p-8 rounded-2xl hover:border-accentCyan/50 transition group">
-                <div class="w-12 h-12 rounded-xl bg-accentCyan/10 text-accentCyan flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition">02</div>
-                <h4 class="text-xl font-bold mb-3">Liquidity Sweeps & CHoCH</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Master market structure shifts, stop hunts, and Change of Character to avoid retail traps completely.</p>
-            </div>
-            <div class="bg-cardBg border border-slate-800 p-8 rounded-2xl hover:border-accentGold/50 transition group">
-                <div class="w-12 h-12 rounded-xl bg-accentGold/10 text-accentGold flex items-center justify-center font-bold text-xl mb-6 group-hover:scale-110 transition">03</div>
-                <h4 class="text-xl font-bold mb-3">Risk & Execution Engine</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Deploy strict position sizing, asymmetric risk-to-reward ratios (1:3+), and automated algorithmic execution.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Angel One Broker Partner Section -->
-    <section id="broker" class="py-20 bg-gradient-to-b from-darkBg to-cardBg/30 border-y border-slate-800">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="px-3 py-1 rounded-full bg-accentCyan/10 text-accentCyan text-xs font-semibold uppercase tracking-wider">Official Partnership</span>
-                <h3 class="text-3xl font-extrabold mt-4 mb-6">Trade with Zero Brokerage & Institutional Tools via Angel One</h3>
-                <p class="text-slate-400 mb-6 leading-relaxed">Open your Demat account through our official partner link and get free premium access to our automated terminal tools and community signals.</p>
-                <ul class="space-y-4 mb-8 text-slate-300 text-sm">
-                    <li class="flex items-center space-x-3">
-                        <span class="text-accentGold font-bold">&#10003;</span>
-                        <span>Free Demat Account Setup in 5 Minutes</span>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <span class="text-accentGold font-bold">&#10003;</span>
-                        <span>Advanced SmartAPI & TradingView Integration</span>
-                    </li>
-                    <li class="flex items-center space-x-3">
-                        <span class="text-accentGold font-bold">&#10003;</span>
-                        <span>Exclusive Access to TradeVortex Alpha Group</span>
-                    </li>
-                </ul>
-                <a href="https://angelone.in" target="_blank" class="inline-flex items-center justify-center px-8 py-4 rounded-xl font-bold text-base bg-gradient-to-r from-accentCyan to-blue-600 text-black shadow-xl shadow-accentCyan/20 hover:scale-105 transition">
-                    Open Angel One Account &rarr;
-                </a>
-            </div>
-            <div class="bg-cardBg border border-slate-700 p-8 rounded-3xl shadow-2xl relative">
-                <div class="absolute -top-4 -right-4 bg-accentGold text-black font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-wider shadow-lg">Partner Benefit</div>
-                <h4 class="text-2xl font-bold mb-4">Partner Referral Code</h4>
-                <div class="bg-darkBg p-4 rounded-xl border border-slate-800 text-center mb-6">
-                    <span class="text-xs text-slate-400 block mb-1 uppercase tracking-widest">Use Code during Signup</span>
-                    <span class="text-3xl font-extrabold text-accentGold tracking-widest">HONNZY</span>
-                </div>
-                <p class="text-xs text-slate-400 text-center leading-relaxed">After opening your account, share your client code with our team on WhatsApp to activate your masterclass bonuses.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Interactive Compounding Simulator -->
-    <section id="simulator" class="py-20 max-w-4xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-extrabold mb-3">Trading Growth Simulator</h3>
-            <p class="text-slate-400 text-sm">Calculate your projected capital growth using consistent institutional risk management.</p>
-        </div>
-        <div class="bg-cardBg border border-slate-800 p-8 rounded-3xl shadow-2xl">
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Initial Capital (₹)</label>
-                    <input type="number" id="principal" value="50000" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white font-bold focus:outline-none focus:border-accentGold" oninput="calculateGrowth()">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Monthly Gain Target (%)</label>
-                    <input type="number" id="returnRate" value="15" class="w-full bg-darkBg border border-slate-700 rounded-xl px-4 py-3 text-white font-bold focus:outline-none focus:border-accentGold" oninput="calculateGrowth()">
-                </div>
-            </div>
-            <div class="bg-darkBg p-6 rounded-2xl border border-slate-800 grid grid-cols-2 gap-6 text-center">
-                <div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Projected Capital (12 Months)</div>
-                    <div id="finalAmount" class="text-2xl sm:text-3xl font-extrabold text-accentGold">₹2,67,863</div>
-                </div>
-                <div>
-                    <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Total Net Profit</div>
-                    <div id="totalProfit" class="text-2xl sm:text-3xl font-extrabold text-accentCyan">₹2,17,863</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Masterclass Pricing -->
-    <section id="pricing" class="py-20 max-w-5xl mx-auto px-4">
-        <div class="text-center max-w-2xl mx-auto mb-16">
-            <h3 class="text-3xl sm:text-4xl font-extrabold mb-4">Secure Your Mentorship Spot</h3>
-            <p class="text-slate-400">Choose your tier and join live institutional masterclasses with direct mentor access.</p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div class="bg-cardBg border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
-                <div>
-                    <h4 class="text-xl font-bold mb-2">Standard SMC Mentorship</h4>
-                    <p class="text-slate-400 text-sm mb-6">Complete video course library + weekly live doubt clearing sessions.</p>
-                    <div class="text-3xl font-extrabold text-white mb-6">₹4,999 <span class="text-xs text-slate-500 font-normal">/ lifetime</span></div>
-                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
-                        <li class="flex items-center space-x-2"><span>&#10003;</span><span>50+ Institutional Modules</span></li>
-                        <li class="flex items-center space-x-2"><span>&#10003;</span><span>Weekly Live Market Analysis</span></li>
-                    </ul>
-                </div>
-                <a href="https://wa.me/918108433013?text=Hi%20Yusuf,%20I%20want%20to%20join%20Standard%20SMC%20Mentorship" target="_blank" class="w-full py-3.5 rounded-xl font-bold text-center bg-slate-800 hover:bg-slate-700 transition">Enroll via WhatsApp</a>
-            </div>
-            <div class="bg-gradient-to-b from-cardBg to-blue-950/40 border-2 border-accentGold p-8 rounded-3xl flex flex-col justify-between relative shadow-2xl shadow-accentGold/10">
-                <div class="absolute -top-3 right-6 bg-accentGold text-black font-extrabold text-[10px] px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</div>
-                <div>
-                    <h4 class="text-xl font-bold mb-2 text-accentGold">VIP Institutional Masterclass</h4>
-                    <p class="text-slate-400 text-sm mb-6">Live 2-day intensive bootcampp + private signal community & 1-on-1 mentorship.</p>
-                    <div class="text-3xl font-extrabold text-white mb-6">₹9,999 <span class="text-xs text-slate-500 font-normal">/ all inclusive</span></div>
-                    <ul class="space-y-3 text-sm text-slate-300 mb-8">
-                        <li class="flex items-center space-x-2"><span class="text-accentGold">&#10003;</span><span>Everything in Standard</span></li>
-                        <li class="flex items-center space-x-2"><span class="text-accentGold">&#10003;</span><span>Live Trading Room Access</span></li>
-                        <li class="flex items-center space-x-2"><span class="text-accentGold">&#10003;</span><span>Algo Dashboard Source Code</span></li>
-                    </ul>
-                </div>
-                <a href="https://wa.me/918108433013?text=Hi%20Yusuf,%20I%20want%20to%20join%20VIP%20Institutional%20Masterclass" target="_blank" class="w-full py-3.5 rounded-xl font-bold text-center bg-gradient-to-r from-accentGold to-amber-500 text-black shadow-lg shadow-accentGold/20 hover:scale-[1.02] transition">Enroll via WhatsApp</a>
+            <div class="text-center shrink-0 w-full md:w-auto">
+                <button onclick="openAngelWithReferral()" class="w-full md:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition-all duration-300 text-base">
+                    🚀 Claim Free AI Tools Now
+                </button>
+                <p class="text-xs text-slate-400 mt-3">Auto-copies code: <span class="text-accentGold font-bold">HONNZY</span></p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 bg-darkBg py-12 text-center text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="mb-4">&copy; 2026 TradeVortex School of Trading. All rights reserved.</p>
-            <p class="max-w-2xl mx-auto leading-relaxed">Disclaimer: Stock market trading involves substantial risk of loss and is not suitable for every investor. Valuation and education provided are strictly for learning purposes.</p>
-        </div>
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500 max-w-7xl mx-auto px-4">
+        <p>© 2026 TradeVortex School of Trading. All rights reserved. Educational content for technical analysis practice only.</p>
     </footer>
 
-    <script>
-        function calculateGrowth() {
-            let P = parseFloat(document.getElementById('principal').value) || 0;
-            let r = (parseFloat(document.getElementById('returnRate').value) || 0) / 100;
-            let months = 12;
-            let final = P * Math.pow((1 + r), months);
-            let profit = final - P;
-            document.getElementById('finalAmount').innerText = '₹' + Math.round(final).toLocaleString('en-IN');
-            document.getElementById('totalProfit').innerText = '₹' + Math.round(profit).toLocaleString('en-IN');
-        }
-    </script>
 </body>
 </html>

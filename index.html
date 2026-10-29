@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TradeVortex School of Trading | Institutional SMC Mentorship</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="TradeVortex School of Trading by Mr. Yusuf. Master Smart Money Concepts (SMC), live Google Meet mentorship, and institutional analytics terminal.">
-    <meta name="keywords" content="trading free class, AI trading tools, Smart Money Concepts, Google Meet trading class, stock market mentorship, TradeVortex">
+    <meta name="description" content="TradeVortex School of Trading by Mr. Yusuf. Master Smart Money Concepts (SMC), live Google Meet mentorship, algorithmic trading, order flow, and quantitative analytics terminal.">
+    <meta name="keywords" content="trading free class, AI trading tools, Smart Money Concepts, Google Meet trading class, stock market mentorship, TradeVortex, algorithmic trading India, Nifty options analysis">
     <meta name="author" content="Mr. Yusuf">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="TradeVortex School of Trading | Institutional SMC Mentorship">
+    <meta property="og:description" content="Master Smart Money Concepts and get free AI trading tools & live analytics terminal access.">
+    <meta property="og:type" content="website">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -30,23 +35,25 @@
         }
     </script>
 </head>
-<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentGold selection:text-black">
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-accentGold selection:text-black min-h-screen flex flex-col justify-between">
 
     <!-- Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-darkBg/95 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex items-center space-x-3">
-                    <a href="index.html" class="text-2xl font-black tracking-tight text-white">Trade<span class="text-accentGold">Vortex</span></a>
-                    <span class="hidden sm:inline-block text-xs font-semibold bg-slate-800/80 text-slate-300 px-3 py-1 rounded-full border border-slate-700">Academy</span>
+                <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('home')">
+                    <span class="text-2xl font-black tracking-tight text-white">Trade<span class="text-accentGold">Vortex</span></span>
+                    <span class="hidden sm:inline-block text-xs font-semibold bg-slate-800/80 text-slate-300 px-3 py-1 rounded-full border border-slate-700">Institutional Academy</span>
                 </div>
+                
                 <!-- Navigation Links -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                    <a href="index.html" class="text-accentGold font-bold">Home</a>
-                    <a href="proof.html" class="hover:text-white transition-colors">Live Meet Proofs</a>
-                    <a href="curriculum.html" class="hover:text-white transition-colors">Curriculum</a>
-                    <a href="contact.html" class="hover:text-white transition-colors">Support Desk</a>
+                <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-400">
+                    <button id="nav-home" onclick="switchTab('home')" class="hover:text-white transition-colors text-accentGold font-bold">Home</button>
+                    <button id="nav-proof" onclick="switchTab('proof')" class="hover:text-white transition-colors">Live Meet Proofs</button>
+                    <button id="nav-curriculum" onclick="switchTab('curriculum')" class="hover:text-white transition-colors">Curriculum</button>
+                    <button id="nav-support" onclick="switchTab('support')" class="hover:text-white transition-colors">Support Desk</button>
                 </div>
+
                 <div>
                     <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-lg transition-all shadow-lg shadow-emerald-950">
                         Open Demat Account
@@ -56,181 +63,294 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative overflow-hidden py-20 sm:py-28 border-b border-slate-800/80 bg-gradient-to-b from-darkBg via-slate-900/40 to-darkBg">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <span class="inline-block bg-accentGold/10 text-accentGold border border-accentGold/20 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
-                🔥 500+ Active Institutional Traders Joined
-            </span>
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
-                Institutional Grade Execution & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentGold to-amber-200">Algorithmic Analytics</span>
-            </h1>
-            <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed font-normal">
-                Master advanced order flow dynamics, fair value gaps, and liquidity mapping in daily live Google Meet interactive sessions by Mr. Yusuf.
-            </p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold px-8 py-4 rounded-xl shadow-xl transition-all text-sm sm:text-base inline-block">
-                    Access AI Tools via Partner Account
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- 📊 LIVE METRICS & PROOF BANNER -->
-    <section class="py-12 bg-slate-900/60 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-4 bg-cardBg rounded-xl border border-slate-800">
-                    <p class="text-3xl font-extrabold text-accentGold">500+</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Active Traders</p>
-                </div>
-                <div class="p-4 bg-cardBg rounded-xl border border-slate-800">
-                    <p class="text-3xl font-extrabold text-emerald-400">120+</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Live Google Meets</p>
-                </div>
-                <div class="p-4 bg-cardBg rounded-xl border border-slate-800">
-                    <p class="text-3xl font-extrabold text-accentCyan">100%</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Free AI Tools Access</p>
-                </div>
-                <div class="p-4 bg-cardBg rounded-xl border border-slate-800">
-                    <p class="text-3xl font-extrabold text-purple-400">4.9 / 5</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Community Rating</p>
+    <!-- PAGE 1: HOME -->
+    <main id="tab-home" class="page-content">
+        <!-- Hero Section -->
+        <header class="relative overflow-hidden py-20 sm:py-28 border-b border-slate-800/80 bg-gradient-to-b from-darkBg via-slate-900/40 to-darkBg">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <span class="inline-block bg-accentGold/10 text-accentGold border border-accentGold/20 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
+                    🔥 500+ Active Institutional Traders Joined
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-tight">
+                    Institutional Grade Execution & <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentGold to-amber-200">Algorithmic Analytics</span>
+                </h1>
+                <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed font-normal">
+                    Master advanced order flow dynamics, fair value gaps, and liquidity mapping in daily live Google Meet interactive sessions by Mr. Yusuf.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-semibold px-8 py-4 rounded-xl shadow-xl transition-all text-sm sm:text-base inline-block">
+                        Access AI Tools via Partner Account
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- 📸 GOOGLE MEET LIVE SESSIONS GALLERY PREVIEW -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <!-- Live Metrics Section -->
+        <section class="py-12 bg-slate-900/60 border-b border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-5 bg-cardBg rounded-xl border border-slate-800">
+                        <p class="text-3xl font-extrabold text-accentGold">500+</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Active Traders</p>
+                    </div>
+                    <div class="p-5 bg-cardBg rounded-xl border border-slate-800">
+                        <p class="text-3xl font-extrabold text-emerald-400">120+</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Live Google Meets</p>
+                    </div>
+                    <div class="p-5 bg-cardBg rounded-xl border border-slate-800">
+                        <p class="text-3xl font-extrabold text-accentCyan">100%</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Free AI Tools Access</p>
+                    </div>
+                    <div class="p-5 bg-cardBg rounded-xl border border-slate-800">
+                        <p class="text-3xl font-extrabold text-purple-400">4.9 / 5</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase font-semibold">Community Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Meet Preview Gallery -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-accentCyan font-semibold text-xs uppercase tracking-widest">Live Interactive Sessions</span>
+                <h2 class="text-3xl font-extrabold text-white mt-2">Daily Mentorship on Google Meet</h2>
+                <p class="text-slate-400 text-sm mt-2">Real-time market analysis, live trade setup identification, and interactive Q&A with Mr. Yusuf.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden shadow-xl">
+                    <div class="bg-slate-900 p-6 border-b border-slate-800">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                            <span class="text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded">Session #118</span>
+                            <span>Google Meet Live</span>
+                        </div>
+                        <h3 class="text-white font-bold text-base mb-1">Nifty Order Flow & Liquidity Sweep</h3>
+                        <p class="text-xs text-slate-400">Live breakout verification and institutional FVG marking.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900/40 text-xs text-slate-400 flex justify-between">
+                        <span>👥 48 Attendance</span>
+                        <span>⏱️ 90 Mins Duration</span>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden shadow-xl">
+                    <div class="bg-slate-900 p-6 border-b border-slate-800">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                            <span class="text-accentCyan font-bold bg-cyan-500/10 px-2.5 py-1 rounded">Session #119</span>
+                            <span>Google Meet Live</span>
+                        </div>
+                        <h3 class="text-white font-bold text-base mb-1">SMC Terminal Live Execution</h3>
+                        <p class="text-xs text-slate-400">Automated strike selection & risk sizing strategy.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900/40 text-xs text-slate-400 flex justify-between">
+                        <span>👥 52 Attendance</span>
+                        <span>⏱️ 75 Mins Duration</span>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden shadow-xl">
+                    <div class="bg-slate-900 p-6 border-b border-slate-800">
+                        <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                            <span class="text-accentGold font-bold bg-amber-500/10 px-2.5 py-1 rounded">Session #120</span>
+                            <span>Google Meet Live</span>
+                        </div>
+                        <h3 class="text-white font-bold text-base mb-1">BankNifty Structure Breakdown</h3>
+                        <p class="text-xs text-slate-400">CHoCH detection and entry refinement in live market.</p>
+                    </div>
+                    <div class="p-4 bg-slate-900/40 text-xs text-slate-400 flex justify-between">
+                        <span>👥 61 Attendance</span>
+                        <span>⏱️ 105 Mins Duration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <button onclick="switchTab('proof')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded-xl text-xs sm:text-sm transition-all">
+                    View All Google Meet Sessions & Proofs →
+                </button>
+            </div>
+        </section>
+
+        <!-- Access Pathways Section -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-purple-600/20 text-purple-300 border border-purple-500/30 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                    ⚡ Exclusive Access Portal (Slots Filling Fast)
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Institutional Terminal License</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">Choose your preferred compliance pathway to unlock the TradeVortex SMC Analytics Suite.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all shadow-xl">
+                    <div>
+                        <span class="text-emerald-400 text-xs font-semibold uppercase tracking-wider bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20">Pathway 01</span>
+                        <h3 class="text-xl font-bold text-white mt-6">New Partner Account</h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Open a fresh Angel One Demat account using our official partner link to receive complimentary terminal access.
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-4 rounded-xl transition-all text-center block text-sm shadow-md">
+                            Open Free Account
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all shadow-xl">
+                    <div>
+                        <span class="text-accentCyan text-xs font-semibold uppercase tracking-wider bg-cyan-500/10 px-3 py-1 rounded-md border border-cyan-500/20">Pathway 02</span>
+                        <h3 class="text-xl font-bold text-white mt-6">Family / Peer Account</h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Already have an account? Register a family member or colleague through our onboarding link to unlock full features.
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3.5 px-4 rounded-xl transition-all text-center block text-sm border border-slate-700 shadow-md">
+                            Register Peer Account
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-cardBg border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all shadow-xl">
+                    <div>
+                        <span class="text-accentGold text-xs font-semibold uppercase tracking-wider bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">Pathway 03</span>
+                        <h3 class="text-xl font-bold text-white mt-6">Direct Terminal Pass</h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Procure direct access pass for ₹499 via verified institutional support channel.
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <a href="https://wa.me/918108433013?text=Bhai%20mujhe%20AI%20Tools%20ka%20499%20wala%20pass%20chahiye" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold py-3.5 px-4 rounded-xl transition-all text-center block text-sm shadow-md">
+                            Acquire Direct Pass (₹499)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PAGE 2: LIVE MEET PROOFS -->
+    <main id="tab-proof" class="page-content hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center max-w-3xl mx-auto mb-12">
-            <span class="text-accentCyan font-semibold text-xs uppercase tracking-widest">Live Interactive Sessions</span>
-            <h2 class="text-3xl font-extrabold text-white mt-2">Daily Mentorship on Google Meet</h2>
-            <p class="text-slate-400 text-sm mt-2">Real-time market analysis, live trade setup identification, and Q&A with Mr. Yusuf.</p>
+            <span class="text-accentCyan font-semibold text-xs uppercase tracking-widest">Verified Transparency</span>
+            <h2 class="text-3xl font-extrabold text-white mt-2">Live Google Meet Mentorship Archive</h2>
+            <p class="text-slate-400 text-sm mt-2">Explore active student participations, live index analysis, and real-time execution reviews.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Meet Card 1 -->
-            <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden shadow-xl">
-                <div class="bg-slate-800 h-48 flex items-center justify-center text-slate-500 font-mono text-xs border-b border-slate-700">
-                    <div class="text-center p-4">
-                        <span class="text-2xl block mb-2">💻</span>
-                        <p class="text-slate-300 font-bold text-sm">Google Meet Nifty Scalping Session</p>
-                        <p class="text-slate-500 text-xs mt-1">Order Flow & Liquidity Sweep Live Analysis</p>
-                    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-emerald-400 font-bold text-sm bg-emerald-500/10 px-3 py-1 rounded-md">Live Class Snapshot #01</span>
+                    <span class="text-xs text-slate-400">Nifty SMC Analysis</span>
                 </div>
-                <div class="p-4">
-                    <span class="text-emerald-400 text-xs font-semibold">Live Session #118</span>
-                    <h3 class="text-white font-bold text-sm mt-1">BankNifty FVG Setup Live Execution</h3>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                    <p class="text-slate-300 font-bold text-sm">📈 Real-time Market Structure Break (BOS) Session</p>
+                    <p class="text-slate-500 text-xs mt-2">Demonstrated dynamic Order Flow identification on 5-min timeframe during live market hours.</p>
                 </div>
             </div>
 
-            <!-- Meet Card 2 -->
-            <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden shadow-xl">
-                <div class="bg-slate-800 h-48 flex items-center justify-center text-slate-500 font-mono text-xs border-b border-slate-700">
-                    <div class="text-center p-4">
-                        <span class="text-2xl block mb-2">📈</span>
-                        <p class="text-slate-300 font-bold text-sm">SMC Terminal Live Demo</p>
-                        <p class="text-slate-500 text-xs mt-1">Strike Selection & Auto Position Sizing</p>
-                    </div>
+            <div class="bg-cardBg border border-slate-800 rounded-2xl p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="text-accentCyan font-bold text-sm bg-cyan-500/10 px-3 py-1 rounded-md">Live Class Snapshot #02</span>
+                    <span class="text-xs text-slate-400">BankNifty FVG Verification</span>
                 </div>
-                <div class="p-4">
-                    <span class="text-accentCyan text-xs font-semibold">Live Session #119</span>
-                    <h3 class="text-white font-bold text-sm mt-1">Institutional Order Block Identification</h3>
-                </div>
-            </div>
-
-            <!-- Meet Card 3 -->
-            <div class="bg-cardBg border border-slate-800 rounded-xl overflow-hidden shadow-xl">
-                <div class="bg-slate-800 h-48 flex items-center justify-center text-slate-500 font-mono text-xs border-b border-slate-700">
-                    <div class="text-center p-4">
-                        <span class="text-2xl block mb-2">👥</span>
-                        <p class="text-slate-300 font-bold text-sm">Community Q&A & Backtesting</p>
-                        <p class="text-slate-500 text-xs mt-1">45+ Active Traders Joined</p>
-                    </div>
-                </div>
-                <div class="p-4">
-                    <span class="text-accentGold text-xs font-semibold">Live Session #120</span>
-                    <h3 class="text-white font-bold text-sm mt-1">Weekly Market Structure Review</h3>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                    <p class="text-slate-300 font-bold text-sm">💻 Streamlit SMC Analytics Terminal Setup</p>
+                    <p class="text-slate-500 text-xs mt-2">Guiding 50+ live active community members on automated strike selection and risk calculator.</p>
                 </div>
             </div>
         </div>
+    </main>
 
-        <div class="text-center mt-8">
-            <a href="proof.html" class="inline-block bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-semibold px-6 py-3 rounded-xl text-xs sm:text-sm transition-all">
-                View All Live Google Meet Screenshots & Community Proofs →
-            </a>
-        </div>
-    </section>
-
-    <!-- Professional Access Portal Section -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- PAGE 3: CURRICULUM -->
+    <main id="tab-curriculum" class="page-content hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-accentCyan font-semibold text-xs uppercase tracking-widest">Platform Access</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Institutional Terminal License</h2>
-            <p class="text-slate-400 text-sm sm:text-base mt-3">Choose your preferred compliance pathway to unlock the TradeVortex SMC Analytics Suite.</p>
+            <span class="text-slate-400 font-semibold text-xs uppercase tracking-widest">Syllabus Overview</span>
+            <h2 class="text-3xl font-bold text-white mt-2">Institutional Curriculum Pillars</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Pathway 1 -->
-            <div class="bg-cardBg border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all shadow-xl">
-                <div>
-                    <span class="text-emerald-400 text-xs font-semibold uppercase tracking-wider bg-emerald-500/10 px-3 py-1 rounded-md border border-emerald-500/20">Pathway 01</span>
-                    <h3 class="text-xl font-bold text-white mt-6">New Partner Account</h3>
-                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-                        Open a fresh Angel One Demat account using our official partner link to receive complimentary terminal access.
-                    </p>
-                </div>
-                <div class="mt-8">
-                    <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-4 rounded-xl transition-all text-center block text-sm shadow-md">
-                        Open Account Free
-                    </a>
-                </div>
+            <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-8">
+                <span class="text-accentGold font-mono text-lg font-bold">01</span>
+                <h3 class="text-lg font-bold text-white mt-4 mb-2">Market Structure</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Systematic identification of structural breaks (BOS) and character shifts (CHoCH) across equity indices.</p>
             </div>
-
-            <!-- Pathway 2 -->
-            <div class="bg-cardBg border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all shadow-xl">
-                <div>
-                    <span class="text-accentCyan text-xs font-semibold uppercase tracking-wider bg-cyan-500/10 px-3 py-1 rounded-md border border-cyan-500/20">Pathway 02</span>
-                    <h3 class="text-xl font-bold text-white mt-6">Family / Peer Account</h3>
-                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-                        Already have an account? Register a family member or colleague through our onboarding link to unlock full features.
-                    </p>
-                </div>
-                <div class="mt-8">
-                    <a href="https://a.aonelink.in/ANGOne/tNCsDi3" target="_blank" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-semibold py-3.5 px-4 rounded-xl transition-all text-center block text-sm border border-slate-700 shadow-md">
-                        Register Family Member
-                    </a>
-                </div>
+            <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-8">
+                <span class="text-accentCyan font-mono text-lg font-bold">02</span>
+                <h3 class="text-lg font-bold text-white mt-4 mb-2">Imbalance & Liquidity</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Precise mapping of Fair Value Gaps (FVG), order blocks, and institutional liquidity sweeps.</p>
             </div>
-
-            <!-- Pathway 3 -->
-            <div class="bg-cardBg border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-700 transition-all shadow-xl">
-                <div>
-                    <span class="text-accentGold text-xs font-semibold uppercase tracking-wider bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">Pathway 03</span>
-                    <h3 class="text-xl font-bold text-white mt-6">Direct Terminal Pass</h3>
-                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
-                        Procure direct access pass for ₹499 via verified institutional support channel.
-                    </p>
-                </div>
-                <div class="mt-8">
-                    <a href="https://wa.me/918108433013?text=Bhai%20mujhe%20AI%20Tools%20ka%20499%20wala%20pass%20chahiye" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold py-3.5 px-4 rounded-xl transition-all text-center block text-sm shadow-md">
-                        Acquire Direct Pass (₹499)
-                    </a>
-                </div>
+            <div class="bg-cardBg/60 border border-slate-800 rounded-2xl p-8">
+                <span class="text-emerald-400 font-mono text-lg font-bold">03</span>
+                <h3 class="text-lg font-bold text-white mt-4 mb-2">Algorithmic Analytics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Automated strike selection, trend filters, and dynamic risk management calculators built in Streamlit.</p>
             </div>
         </div>
-    </section>
+    </main>
 
-    <!-- Professional Floating Support -->
+    <!-- PAGE 4: SUPPORT DESK -->
+    <main id="tab-support" class="page-content hidden max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <span class="text-accentGold font-semibold text-xs uppercase tracking-widest">Instant Assistance</span>
+        <h2 class="text-3xl font-extrabold text-white mt-2">TradeVortex Help Desk</h2>
+        <p class="text-slate-400 text-sm mt-3">Need guidance with Demat onboarding, referral verification, or terminal pass access?</p>
+
+        <div class="mt-10 bg-cardBg border border-slate-800 rounded-2xl p-8 max-w-lg mx-auto shadow-xl">
+            <p class="text-white font-bold text-base mb-2">Direct Official WhatsApp Support</p>
+            <p class="text-slate-400 text-xs mb-6">Connect directly with our onboarding team for instant verification and pass issuance.</p>
+            <a href="https://wa.me/918108433013?text=Hello%20Team,%20I%20need%20assistance%20with%20TradeVortex%20Terminal%20access." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 px-6 rounded-xl transition-all inline-block text-sm">
+                Chat on WhatsApp (+91 81084 33013)
+            </a>
+        </div>
+    </main>
+
+    <!-- Floating Support Button -->
     <a href="https://wa.me/918108433013?text=Hello%20Team,%20I%20need%20assistance%20with%20TradeVortex%20Terminal%20access." target="_blank" class="fixed bottom-6 right-6 z-50 bg-slate-800 hover:bg-slate-700 text-white p-4 rounded-full shadow-2xl border border-slate-700 flex items-center justify-center transition-all hover:scale-105">
         <svg class="w-6 h-6 fill-current text-emerald-400" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
     </a>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-slate-800/80 text-center text-xs text-slate-500 max-w-7xl mx-auto px-4">
+    <footer class="py-12 border-t border-slate-800/80 text-center text-xs text-slate-500 max-w-7xl mx-auto px-4 mt-auto">
         <p class="mb-3 font-medium text-slate-400">© 2026 TradeVortex School of Trading. Lead Mentor: Mr. Yusuf.</p>
         <p class="max-w-2xl mx-auto leading-relaxed">Regulatory Disclaimer: All analytical tools, curriculum setups, and quantitative frameworks are provided strictly for educational and technical research purposes. Financial derivatives and equity trading involve substantial risk.</p>
     </footer>
 
+    <!-- Interactive Navigation Script -->
+    <script>
+        function switchTab(tabName) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.add('hidden'));
+
+            // Show target page
+            const targetPage = document.getElementById('tab-' + tabName);
+            if (targetPage) {
+                targetPage.classList.remove('hidden');
+            }
+
+            // Reset tab highlights
+            const navButtons = ['home', 'proof', 'curriculum', 'support'];
+            navButtons.forEach(btn => {
+                const navElem = document.getElementById('nav-' + btn);
+                if (navElem) {
+                    navElem.classList.remove('text-accentGold', 'font-bold');
+                    navElem.classList.add('text-slate-400');
+                }
+            });
+
+            // Highlight active tab
+            const activeNav = document.getElementById('nav-' + tabName);
+            if (activeNav) {
+                activeNav.classList.add('text-accentGold', 'font-bold');
+                activeNav.classList.remove('text-slate-400');
+            }
+
+            // Scroll to top smooth
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
